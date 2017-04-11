@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:alpha="0.7">
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/images"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/face"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/idioma"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/terminos"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margen"
+                    android:layout_marginRight="@dimen/margen"
+                    android:layout_marginTop="@dimen/subtitulo"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="@string/telf"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pass"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginRight="@dimen/margen"
+                    android:layout_marginLeft="@dimen/margen"
+                    android:layout_marginTop="@dimen/margenTop"
+                    android:backgroundTint="@color/colorAccent"
+
+                    android:inputType="textPassword"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:paddingLeft="@dimen/barraAncho"
+                    android:paddingRight="@dimen/barraAncho"
+                    android:paddingBottom="@dimen/margenBottom"
+                    android:paddingTop="@dimen/margenBottom"
+                    android:layout_marginTop="@dimen/margen"
+                    android:layout_marginBottom="@dimen/margen"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/boton"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/signin"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/olv"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/terminos"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margenBottom">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/crea"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/terminos"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</RelativeLayout>
